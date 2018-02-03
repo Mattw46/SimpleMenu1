@@ -15,7 +15,10 @@ public class Prog1Ass1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        Tests test = new Tests();
+        test.runTests();
+        
+        // main logic starts here
     }
     
 }
