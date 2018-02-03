@@ -5,6 +5,8 @@
  */
 package prog1ass1.CharacterPattern;
 
+import java.util.Scanner;
+
 /**
  *
  * @author neo
@@ -12,8 +14,16 @@ package prog1ass1.CharacterPattern;
 public class CharacterPattern {
     
     public void PrintPattern() {
+        int rows;
+        char character;
+        Scanner sc = new Scanner(System.in);
         
-        PrintPattern(1,'x');
+        System.out.print("Number of rows:\t\t");
+        rows = sc.nextInt();
+        System.out.print("\n\nCharacter to be printed:\t\t");
+        character = sc.next().charAt(0);
+        System.out.println();
+        PrintPattern(rows, character);
     }
     
     public void PrintPattern(int rows, char c) {

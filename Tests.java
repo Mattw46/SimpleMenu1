@@ -13,7 +13,7 @@ import prog1ass1.CharacterPattern.CharacterPattern;
 public class Tests {
     
     public void runTests() {
-        System.out.println("Running tests:\n\n");
+        System.out.println("**** Running tests: ****\n\n");
         System.out.println("Test Printing Character Patterns:");
         CharacterPattern pattern = new CharacterPattern();
         System.out.println("printing X 5 times\n");
@@ -22,6 +22,10 @@ public class Tests {
         System.out.println("printing T 3 times\n");
         pattern.PrintPattern(3, 'T');
         System.out.println();
+        System.out.println("calling print without arguments");
+        pattern.PrintPattern();
+        
+        System.out.println("**** Testing is complete ****");
     }
     
 }
