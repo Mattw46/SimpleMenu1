@@ -16,8 +16,10 @@ public class Tests {
         System.out.println("Running tests:\n\n");
         System.out.println("Test Printing Character Patterns:");
         CharacterPattern pattern = new CharacterPattern();
+        System.out.println("printing X 5 times\n");
         pattern.PrintPattern(5, 'X');
         System.out.println();
+        System.out.println("printing T 3 times\n");
         pattern.PrintPattern(3, 'T');
         System.out.println();
     }
