@@ -5,6 +5,8 @@
  */
 package prog1ass1.StampDuty;
 
+import java.util.Scanner;
+
 
 /**
  *
@@ -13,7 +15,12 @@ package prog1ass1.StampDuty;
 public class StampDutyCalculator {
     
     public void getStampDuty() {
+        double amount;
+        Scanner sc = new Scanner(System.in);
         System.out.println("Enter amount");
+        amount = sc.nextDouble();
+        
+        getStampDuty(amount);
     }
     
     public void getStampDuty(double amount) {
