@@ -5,6 +5,8 @@
  */
 package prog1ass1.SalesSummary;
 
+import java.util.Scanner;
+
 /**
  *
  * @author Matt W
@@ -12,14 +14,19 @@ package prog1ass1.SalesSummary;
 public class TabularSalesSummary {
     
     public void processSalesSummary() {
-    
+        Sale sale = getSale();
+        displaySalesSummary(sale);
     }
     
-    private void getSale() {
-        
+    private Sale getSale() {
+        Sale s = new Sale();
+        Scanner sc = new Scanner(System.in);
+        // prompt for values and set value in sale instance.
+        s.setProductCode(sc.nextLine());
+        return null;
     }
     
-    private void displaySalesSummary() {
+    private void displaySalesSummary(Sale s) {
     
     }
 }
